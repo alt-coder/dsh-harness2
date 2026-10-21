@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "harness2-dsh"
+version = "0.2.0"
+description = "Run Google Research's Harness2 adaptation loop with DeepSeek Harness as both solver and editor"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    # Harness2 is not on PyPI; pinned to a reviewed commit of the upstream repository.
+    "harness2 @ git+https://github.com/google-research/harness2@1cfe254e8d25b15f37048c3730134686abe60335",
+]
+
+[project.urls]
+Homepage = "https://github.com/alt-coder/dsh-harness2"
+Harness2 = "https://github.com/google-research/harness2"
+
+[project.scripts]
+harness2-dsh = "harness2_dsh.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["harness2_dsh*"]

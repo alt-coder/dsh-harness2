@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "title": "Harness2 Sweeps",
+    "description": "Refine an agent harness against one or more tasks with Google Research's Harness2 loop, running real DeepSeek Harness sessions as the solver and the editor."
+  },
+  "tools": {
+    "harness2_improve": {
+      "title": "Start a Harness2 sweep",
+      "description": "Refine a base harness (AGENTS.md, skills, scripts, subagents) against a stream of tasks in the background."
+    },
+    "harness2_result": {
+      "title": "Check a Harness2 sweep",
+      "description": "Report whether a sweep is running, finished with an adopted harness, failed, or was cancelled."
+    },
+    "harness2_cancel": {
+      "title": "Cancel a Harness2 sweep",
+      "description": "Stop a running sweep and the DSH sessions it launched."
+    }
+  }
+}

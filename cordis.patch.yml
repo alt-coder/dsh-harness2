@@ -1,0 +1,11 @@
+# Mounts the Harness2 sweep tools. Every config field is optional; override any of
+# them from your profile's cordis.patch.yml with a row that targets id harness2-tools.
+- insert:
+    - id: harness2-tools
+      name: dsh-plugin-harness2
+      config: {}
+        # executable: /path/to/harness2-dsh   # default: found on PATH or in ~/.local/bin
+        # defaultOutDir: harness2-runs        # relative to the session workspace
+        # provider: deepseek-official         # model for every sweep session, with model;
+        # model: deepseek-flash               # default: the headless profile's model
+        # dshBin: /path/to/dsh                # default: the dsh running this plugin

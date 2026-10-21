@@ -1,0 +1,36 @@
+{
+  "name": "dsh-plugin-harness2",
+  "version": "0.2.0",
+  "description": "Run Google Research Harness2 harness-adaptation sweeps from DeepSeek Harness, with dsh as the solver and the editor.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alt-coder/dsh-harness2.git"
+  },
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "harness2", "agent-harness"],
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-rc.2"
+  },
+  "scripts": {
+    "test": "node --test \"tests/*.test.mjs\""
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
