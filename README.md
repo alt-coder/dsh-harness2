@@ -43,7 +43,8 @@ This puts `harness2-dsh` in `~/.local/bin`, where the plugin finds it.
 github:alt-coder/dsh-harness2
 ```
 
-Then restart dsh. You can also ask the dsh agent itself to *"install the plugin
+(`https://github.com/alt-coder/dsh-harness2` works too.) If dsh reports
+`restart-required`, restart it. You can also ask the dsh agent itself to *"install the plugin
 github:alt-coder/dsh-harness2"*; it uses the same Plugin Manager.
 
 **3. Choose the sweep model and check the setup.**
