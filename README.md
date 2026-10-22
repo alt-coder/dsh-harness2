@@ -37,7 +37,9 @@ uv tool install git+https://github.com/alt-coder/dsh-harness2
 
 This puts `harness2-dsh` in `~/.local/bin`, where the plugin finds it.
 
-**2. Add the plugin to dsh.** Open **Settings → Plugins → Add plugin** and enter:
+**2. Add the plugin to dsh.** In the dsh web app, select **Plugins** in the left
+sidebar (the main sidebar, not inside Settings; **Settings → Built-in plugins** is
+a read-only list), then select **Add plugin** and enter:
 
 ```
 github:alt-coder/dsh-harness2
@@ -168,8 +170,8 @@ more. Start with one small task and `dry_run` to see the plan first.
 ## Troubleshooting
 
 - **Every dsh message fails with `Invalid schema for function ...`.** An
-  installed plugin declares an invalid tool schema. Turn it off in
-  **Settings → Plugins**. This plugin's schemas are tested against dsh's own
+  installed plugin declares an invalid tool schema. Turn it off on the sidebar
+  **Plugins** page. This plugin's schemas are tested against dsh's own
   validator.
 - **`MISSING_CREDENTIAL` or `ACCOUNT_SIGN_IN_REQUIRED` in `doctor` or `run.log`.**
   The headless model has no usable key. See install step 3.
